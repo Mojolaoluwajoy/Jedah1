@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DEITEL EXERCISES.iml" filepath="$PROJECT_DIR$/DEITEL EXERCISES.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deitelexercises.iml" filepath="$PROJECT_DIR$/deitelexercises.iml" />
     </modules>
   </component>
 </project>
