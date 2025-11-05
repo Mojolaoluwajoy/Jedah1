@@ -3,7 +3,7 @@ package chapter6;
 import java.security.SecureRandom;
 
 public class RollDie {
-    public static void rmain(String[] args) {
+    public static void main(String[] args) {
 
         SecureRandom randomNumber =new SecureRandom();
 
@@ -40,7 +40,7 @@ public class RollDie {
             }
         }
         System.out.println("Face\tFrequency");
-        System.out.printf("1\t%d%n2\t%d%n3\t%d%n4\t%d%n5\t%d%n6",frequency1,frequency2,frequency3,frequency4,frequency5,frequency6);
+        System.out.printf("1\t%d%n2\t%d%n3\t%d%n4\t%d%n5\t%d%n6\t%d%n",frequency1,frequency2,frequency3,frequency4,frequency5,frequency6);
     }
 
 }
