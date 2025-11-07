@@ -32,16 +32,16 @@ public class DifficultyLevels {
     public static void generateQuestions() {
         switch (level) {
             case 1:
-                randomNumber1 = secureRandom.nextInt(9);
+                randomNumber1 =1 + secureRandom.nextInt(9);
                 randomNumber2 = secureRandom.nextInt(9);
                 break;
             case 2:
-                randomNumber1 = 10 + secureRandom.nextInt(99);
-                randomNumber2 = 10 + secureRandom.nextInt(99);
+                randomNumber1 = 10 + secureRandom.nextInt(90);
+                randomNumber2 = 10 + secureRandom.nextInt(90);
                 break;
             case 3:
-                randomNumber1 = 100 + secureRandom.nextInt(999);
-                randomNumber2 = 100 + secureRandom.nextInt(999);
+                randomNumber1 = 100 + secureRandom.nextInt(900);
+                randomNumber2 = 100 + secureRandom.nextInt(900);
                 break;
         }
     }
