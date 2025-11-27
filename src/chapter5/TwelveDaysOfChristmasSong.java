@@ -14,9 +14,9 @@ public class TwelveDaysOfChristmasSong {
         }
         while (number !=12);
 
-        int x ;
-        for (x=1;x<=number;x++) {
-        switch (x) {
+        int switchIndex;
+        for (switchIndex =1; switchIndex <=number; switchIndex++) {
+        switch (switchIndex) {
             case 1:
                 System.out.print("On the first day ");
                 break;
@@ -67,7 +67,7 @@ public class TwelveDaysOfChristmasSong {
         }
             System.out.print("of christmas my true love sent to me,");
 
-            switch (x) {
+            switch (switchIndex) {
                 case 1:
                     System.out.println("a partridge in a pear tree. ");
                     break;
