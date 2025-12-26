@@ -1,75 +1,76 @@
 package chapter7.exercises;
 
-import chapter6.Craps;
-
 import java.security.SecureRandom;
 
-public class GameOfCraps {
-    private static final SecureRandom randomNumbers= new SecureRandom();
+    public class GameOfCraps {
+        private static final SecureRandom randomNumbers= new SecureRandom();
 
-    private enum status{CONTINUE,WON,LOST};
+        private enum status{CONTINUE,WON,LOST};
 
-    private static final int SNAKE_EYE=2;
-    private static final int TREY=3;
-    private static final int SEVEN=7;
-    private static final int YO_ELEVEN=11;
-    private static final int BOX_CARS=12;
+        private static final int SNAKE_EYE=2;
+        private static final int TREY=3;
+        private static final int SEVEN=7;
+        private static final int YO_ELEVEN=11;
+        private static final int BOX_CARS=12;
 
-    public static void main(String[] args) {
-        int myPoint = 0;
-       GameOfCraps.status gameStatus;
+        public static void main(String[] args) {
 
-        int sumOfDice = rollDice();
+            for (int gameIndex = 1; gameIndex <= 1000000; gameIndex++) {
+                int myPoint = 0;
+                chapter7.exercises.GameOfCraps.status gameStatus;
 
-        switch (sumOfDice) {
-            case SEVEN:
-            case YO_ELEVEN:
-                gameStatus = GameOfCraps.status.WON;
-                break;
+                int sumOfDice = rollDice();
 
-            case SNAKE_EYE:
-            case TREY:
-                gameStatus = GameOfCraps.status.LOST;
-                break;
+                switch (sumOfDice) {
+                    case SEVEN:
+                    case YO_ELEVEN:
+                        gameStatus = chapter7.exercises.GameOfCraps.status.WON;
+                        break;
 
-            default:
-                gameStatus = GameOfCraps.status.CONTINUE;
-                myPoint = sumOfDice;
-                System.out.printf("My point is: %d%n", myPoint);
-                break;
-        }
-        while (gameStatus ==GameOfCraps.status.CONTINUE) {
-            sumOfDice = rollDice();
+                    case SNAKE_EYE:
+                    case TREY:
+                        gameStatus = chapter7.exercises.GameOfCraps.status.LOST;
+                        break;
 
-            if (sumOfDice == myPoint) {
-                gameStatus = GameOfCraps.status.WON;
-            } else {
-                if (sumOfDice == SEVEN) {
-                    gameStatus = GameOfCraps.status.LOST;
+                    default:
+                        gameStatus = chapter7.exercises.GameOfCraps.status.CONTINUE;
+                        myPoint = sumOfDice;
+                        System.out.printf("My point is: %d%n", myPoint);
+                        break;
+                }
+                while (gameStatus == chapter7.exercises.GameOfCraps.status.CONTINUE) {
+                    sumOfDice = rollDice();
 
+                    if (sumOfDice == myPoint) {
+                        gameStatus = chapter7.exercises.GameOfCraps.status.WON;
+                    } else {
+                        if (sumOfDice == SEVEN) {
+                            gameStatus = chapter7.exercises.GameOfCraps.status.LOST;
+
+                        }
+
+                    }
                 }
 
+                if (gameStatus == chapter7.exercises.GameOfCraps.status.WON) {
+                    System.out.println("Player wins");
+                } else {
+                    System.out.println("Player lost");
+                }
             }
         }
 
-        if (gameStatus == GameOfCraps.status.WON) {
-            System.out.println("Player wins");
-        } else {
-            System.out.println("Player lost");
+
+        public static int rollDice() {
+            int diel1 = 1 + randomNumbers.nextInt(6);
+            int diel2 = 1 + randomNumbers.nextInt(6);
+
+            int sum = diel1+diel2;
+            System.out.printf("Player rolled %d + %d = %d%n",diel1,diel2,sum);
+
+            return sum;
+
         }
-    }
-
-
-
-    public static int rollDice() {
-        int diel1 = 1 + randomNumbers.nextInt(6);
-        int diel2 = 1 + randomNumbers.nextInt(6);
-
-        int sum = diel1+diel2;
-        System.out.printf("Player rolled %d + %d = %d%n",diel1,diel2,sum);
-
-        return sum;
 
     }
 
-}
