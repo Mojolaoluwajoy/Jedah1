@@ -21,11 +21,11 @@ public class DeckOfCards {
     }
     public void shuffle(){
         currentCard=0;
-        for (int first=0;first<deck.length;first++) {
-            int second = randomNumbers.nextInt(NUMBER_OF_CARDS);
-             Card temp= deck[first];
-             deck[first]=deck[second];
-             deck[second]=temp;
+        for (int index = deck.length-1; index >0; index--) {
+            int random = randomNumbers.nextInt(NUMBER_OF_CARDS);
+             Card temp= deck[index];
+             deck[index]=deck[random];
+             deck[random]=temp;
         }
     }
     public Card dealCard(){
