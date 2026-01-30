@@ -1,4 +1,4 @@
-package chapter7.exercises;
+package chapter7.exercises.tortoiseAndTheHare;
 
 import java.security.SecureRandom;
 import java.util.Arrays;
