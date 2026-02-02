@@ -8,7 +8,7 @@ public class Multiplication {
     private static int counter;
     private final String sentinelValue="done";
     ArrayList <String>  answerStorage=new ArrayList<>();
-   ArrayList <Integer> question1Storage =new ArrayList<>();
+   ArrayList <Integer>question1Storage =new ArrayList<>();
    ArrayList <Integer> question2Storage =new ArrayList<>();
      ArrayList <String> rightOrWrongAnswer=new ArrayList<>();
     SecureRandom random=new SecureRandom();
@@ -39,9 +39,9 @@ public class Multiplication {
                 break;
             }
 else {
-                 question1Storage.add(firstNumber);
-                 question2Storage.add(secondNumber);
-               answerStorage.add(response) ;
+                  question1Storage.add(firstNumber);
+                  question2Storage.add(secondNumber);
+                  answerStorage.add(response) ;
                answer = Integer.parseInt(response);
             }
             if (answer ==firstNumber*secondNumber){

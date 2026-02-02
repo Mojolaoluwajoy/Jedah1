@@ -1,10 +1,9 @@
-package chapter9.baseCommisionEmployee;
+package chapter9.examples.commisionEmployeeWithMethodsManipulation;
 
-import chapter9.commisionEmployee.CommissionEmployee;
-
-public class BasePlusCommissionEmployeeTest {
+public class CommissionEmployeeTest {
     public static void main(String[] args) {
-       BasePlusCommissionEmployee employee=new BasePlusCommissionEmployee("Bob","Lewis","333-33-3333",5000,.04,300);
+
+        BaePlusCommissionEmployee employee=new BaePlusCommissionEmployee("Sue","Jones","222-22-2222",10000,.06,3000);
 
         System.out.println("Employee information obtained by get methods");
         System.out.printf("%n%s %s%n","First name is ",employee.getFirstName());

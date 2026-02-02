@@ -1,10 +1,9 @@
-package chapter9.commisionEmployee;
+package chapter9.examples.basePlusEmployeeWithHirachy;
 
 public class CommissionEmployeeTest {
     public static void main(String[] args) {
 
-        CommissionEmployee employee=new CommissionEmployee(
-                "Sue","Jones","222-22-2222",10000,.06);
+        BasePlusCommissionEmployee employee=new BasePlusCommissionEmployee( "Sue","Jones","222-22-2222",10000,.06,2000);
 
         System.out.println("Employee information obtained by get methods");
         System.out.printf("%n%s %s%n","First name is ",employee.getFirstName());
