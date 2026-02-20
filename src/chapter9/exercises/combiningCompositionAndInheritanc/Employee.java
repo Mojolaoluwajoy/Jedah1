@@ -33,7 +33,7 @@ public double earnings(){
 
     @Override
     public String toString() {
-        return String.format("%s: %s %s%n%s: %s%n", "Commission employee",firstName,lastName,"social security number",
+        return String.format("%s: %s %s%n%s: %s%n", "Commission payrollSystem",firstName,lastName,"social security number",
                 socialSecurityNumber);
     }
 }

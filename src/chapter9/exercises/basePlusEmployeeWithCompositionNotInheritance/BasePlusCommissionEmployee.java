@@ -29,7 +29,7 @@ public class BasePlusCommissionEmployee  {
     @Override
     public String toString() {
         return String.format("%s: %s %s%n%s: %s%n%s:%.2f%n%s: %.2f%n%s: %.2f%n%s: %.2f",
-                "Commission employee",commissionEmployee.getFirstName(),commissionEmployee.getLastName(),"social security number",
+                "Commission payrollSystem",commissionEmployee.getFirstName(),commissionEmployee.getLastName(),"social security number",
               commissionEmployee.getSocialSecurityNumber(),"gross sales",commissionEmployee.getGrossSale(),"commission rate",commissionEmployee.getCommissionRate(),"base salary",getBaseSalary(),"Earnings",earnings());
     }
 }

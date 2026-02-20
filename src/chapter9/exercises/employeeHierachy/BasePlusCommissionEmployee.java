@@ -31,7 +31,7 @@ private CommissionEmployee commissionEmployee;
     @Override
     public String toString() {
         return String.format("%s: %s %s%n%s: %s%n%s:%.2f%n%s: %.2f%n%s: %.2f%n%s: %.2f",
-                "Commission employee",getFirstName(),getLastName(),"social security number",
+                "Commission payrollSystem",getFirstName(),getLastName(),"social security number",
                 getSocialSecurityNumber(),"gross sales",commissionEmployee.getGrossSale(),"commission rate",commissionEmployee.getCommissionRate(),"base salary",baseSalary,"Earnings",earnings());
     }
 }

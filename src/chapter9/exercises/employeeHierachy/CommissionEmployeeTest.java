@@ -20,7 +20,7 @@ public class CommissionEmployeeTest {
         basePlus.getCommissionEmployee().setGrossSale(5000);
        basePlus.getCommissionEmployee().setCommissionRate(.1);
 
-        System.out.printf("%n%s:%n%n%s%n","Updated commission employee information obtained by toString ",basePlus.getCommissionEmployee().toString());
-    System.out.printf("%n%s:%n%n%s%n","Updated basePlus commission employee information obtained by toString ",basePlus);
+        System.out.printf("%n%s:%n%n%s%n","Updated commission payrollSystem information obtained by toString ",basePlus.getCommissionEmployee().toString());
+    System.out.printf("%n%s:%n%n%s%n","Updated basePlus commission payrollSystem information obtained by toString ",basePlus);
     }
 }

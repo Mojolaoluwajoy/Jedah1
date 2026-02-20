@@ -15,6 +15,6 @@ public class CommissionEmployeeTest {
         employee.setGrossSale(5000);
         employee.setCommissionRate(.1);
 
-        System.out.printf("%n%s:%n%n%s%n","Updated employee information obtained by toString ",employee);
+        System.out.printf("%n%s:%n%n%s%n","Updated payrollSystem information obtained by toString ",employee);
     }
 }

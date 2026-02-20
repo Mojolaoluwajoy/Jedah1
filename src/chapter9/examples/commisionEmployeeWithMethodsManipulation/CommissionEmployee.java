@@ -63,7 +63,7 @@ public class CommissionEmployee {
     @Override
     public String toString() {
         return String.format("%s: %s %s%n%s: %s%n%s:%.2f%n%s: %.2f",
-                "Commission employee",firstName,lastName,"social security number",
+                "Commission payrollSystem",firstName,lastName,"social security number",
                 socialSecurityNumber,"gross sales",grossSale,"commission rate",commissionRate);
     }
 }

@@ -25,7 +25,7 @@ public class BaePlusCommissionEmployee extends CommissionEmployee {
     @Override
     public String toString() {
         return String.format("%s: %s %s%n%s: %s%n%s:%.2f%n%s: %.2f%n%s: %.2f",
-                "Commission employee",getFirstName(),getLastName(),"social security number",
+                "Commission payrollSystem",getFirstName(),getLastName(),"social security number",
                 getSocialSecurityNumber(),"gross sales",getGrossSale(),"commission rate",getCommissionRate(),"base salary",getBaseSalary());
     }
 }

@@ -47,7 +47,7 @@ this.wage=wage;
     @Override
     public String toString() {
         return String.format("%s: %s %s%n%s: %s%n%s:%d%n%s: %.2f$%n%s: %.2f%n",
-                "Commission employee",getFirstName(),getLastName(),"social security number",
+                "Commission payrollSystem",getFirstName(),getLastName(),"social security number",
                 getSocialSecurityNumber(),"Hours Worked",getHour(),"Wage per hour",getWage(),"Earnings",earnings());
 
     }
