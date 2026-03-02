@@ -1,4 +1,4 @@
-package chapter14;
+package chapter14.examples;
 
 public class StringMiscellaneous {
     public static void main(String[] args) {

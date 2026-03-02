@@ -1,4 +1,4 @@
-package chapter14;
+package chapter14.examples;
 
 public class StringConstructors {
     public static void main(String[] args) {
